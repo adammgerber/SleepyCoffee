@@ -55,7 +55,6 @@ struct ContentView: View {
         NavigationView{
             Form{
                 Section{
-                    
                     DatePicker("Please pick a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
                 } header: {
                     Text("When do you want to wake up?")
