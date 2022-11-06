@@ -57,19 +57,14 @@ struct ContentView: View {
                 Section{
                     
                     DatePicker("Please pick a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
-                        
                 } header: {
                     Text("When do you want to wake up?")
                 }
-                
                 Section{
-                    
                     Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
                 } header : {
                     Text("Desired amount of sleep")
-                        
                 }
-                
                 Section{
                     Stepper(coffeeAmount == 1 ? "1 cup" : "\(coffeeAmount) cups", value: $coffeeAmount, in: 1...20)
                 } header: {
